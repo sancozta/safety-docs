@@ -68,4 +68,4 @@ Agora para abrir o aplicativo entre na pasta do aplicativo e execute o comando a
 
     python main.py
 
-Com isso o Kivy abrirá o aplicativo 
+Com isso o Kivy abrirá o aplicativo em uma janela do seu desktop e você poderá utilizar o aplicativo como se estivese sendo executado em um smartfone.
