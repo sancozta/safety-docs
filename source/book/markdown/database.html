@@ -1,0 +1,309 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Database · Documentação Pattern</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="django.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="arduino.html">
+            
+                <a href="arduino.html">
+            
+                    
+                    Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="kivy.html">
+            
+                <a href="kivy.html">
+            
+                    
+                    Kivy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="flask.html">
+            
+                <a href="flask.html">
+            
+                    
+                    Flask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="django.html">
+            
+                <a href="django.html">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Database</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="database">Database</h3>
+<blockquote>
+<p>Nesta se&#xE7;&#xE3;o podemos verificar todos os itens referentes a documenta&#xE7;&#xE3;o especifica do database.</p>
+</blockquote>
+<p style="text-align: justify;">
+O banco de dados criado para atender a necessidade desta integra&#xE7;&#xE3;o &#xE9; bastante simples e foi criado em MySQL, &#xE9; composto por apenas duas tabelas, que s&#xE3;o <b>users</b> e a <b>logs</b>. Esta duas tabelas s&#xE3;o relacionadas afim de manter as diversas dectec&#xE7;&#xF5;es para um determinado usu&#xE1;rio atr&#xE1;ves do Serial Number &#xFA;nico presente em cada placa arduino. Com isso limitamos o usu&#xE1;rio a poder associar apenas um dispositivo a seu usu&#xE1;rio dentro do sistema.
+</p>
+
+<p style="text-align: justify;">
+Abaixo podemos visualizar como foi modelado a estrutura do banco de dados que como podemos ver &#xE9; bastante simples por&#xE9;m atende a necessidade da integra&#xE7;&#xE3;o pois o foco deste trabalho foi realizar a integra&#xE7;&#xE3;o de diversas tecnologias criadas com a linguagem python e n&#xE3;o um modelo de banco de dados complexo e com diversos conceitos da modelagem de dados aplicados.
+</p>
+
+<p align="center">
+    <img src="../files/01.png">
+</p>
+
+<p style="text-align: justify;">
+O banco de dados como falado anteriormente foi criado no SGBD MySQL e foi colocado em cloud com acesso externo liberando portanto com acesso a internet e um bom client &#xE9; poss&#xED;vel se conectar ao banco e realizar a consultar ou a&#xE7;&#xF5;es desejadas.
+</p>
+
+<p style="text-align: justify;">
+Utilizamos o servi&#xE7;os da Umbler para hospedar gratuitamente o banco de dados. Por&#xE9;m nosso plano gr&#xE1;tis acaba em janeiro de 2019 portanto caso n&#xE3;o consulta acessar os banco de dados fique ciente que nosso periodo de utiliza&#xE7;&#xE3;o j&#xE1; pode ter expirado.
+</p>
+
+<p>De qualquer forma &#xE9; poss&#xED;vel subir o banco localmente basta ter o banco de dados MySQL instalado, utilizando o <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">Workbranch</a> esse trabalho pode ser facilitado. Basta baixar o modelo de dados presente na pasta <b>database</b> do reposit&#xF3;rio <b>safetyflask</b> no github acessando o link <a href="https://github.com/sancozta/safetyflask" target="_blank">sancozta/safetyflask</a>.</p>
+<p style="text-align: justify;">
+Com o modelo do banco <b>safety.mwb</b> em m&#xE3;os basta abri-lo no programa workbranch &#xE9; acessar <b>Database &gt;&gt; Forward Engineer</b> e seguir os passos para que seu modelo seja criado na conex&#xE3;o que voc&#xEA; desejar.
+</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="django.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Django">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Database","level":"1.6","depth":1,"previous":{"title":"Django","level":"1.5","depth":1,"path":"markdown/django.md","ref":"markdown/django.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","margin.left":56,"headerTemplate":null,"margin.bottom":56,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Ubuntu","margin.top":56,"footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false,"margin.right":56},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Documentação Pattern","links":{"about":null,"issues":null,"contribute":null,"sharing":{"google":null,"facebook":null,"twitter":null}},"gitbook":"*","description":"Documentação Pattern - Gitbook"},"file":{"path":"markdown/database.md","mtime":"2018-11-08T22:25:35.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-08T23:30:13.319Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
