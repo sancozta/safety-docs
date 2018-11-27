@@ -11,7 +11,7 @@ Com Kivy tudo é rápido, isso se aplica tanto à velocidade de desenvolvimento 
 </p>
 
 <p style="text-align: justify;">
-Uma grande característica do Kivy é a questão multiplataforma, que roda tanto em dispositivos mobile como também em desktops. Por ser escrito com python o código do nosso projeto com Kivy fica bem menor comparado a outros frameworks de mercado.
+Uma grande característica do Kivy é a questão multiplataforma, que roda tanto em dispositivos mobile como também em desktops. Por ser escrito com python o código do nosso projeto com Kivy fica bem menor comparado a outros frameworks de mercado. O código da parte mobile do projeto pode ser encontrado em <a href="https://github.com/sancozta/safetykivy">sancozta/safetykivy</a>.
 </p>
 
 ### Estrutura
@@ -79,3 +79,19 @@ Agora para abrir o aplicativo entre na pasta do aplicativo e execute o comando a
     python main.py
 
 Com isso o Kivy abrirá o aplicativo em uma janela do seu desktop e você poderá utilizar o aplicativo como se estivese sendo executado em um smartfone.
+
+### Android Debug Bridge
+
+<p style="text-align: justify;">
+O Android Debug Bridge (ADB) é uma ferramenta de linha de comando versátil que permite a comunicação com uma instância de emulador ou com um dispositivo Android conectado. Ele facilita uma variedade de ações de dispositivo, como instalar e depurar aplicativos.
+</p>
+
+Como usar a ferramenta para depurar aplicativos:
+
+	1 - Ative o modo de depuração do aparelho e conecte ao PC.
+	2 - Usando o cmd (ou similar) navegar até a pasta que contém o adb.exe.
+	3 - Digite: adb devices.
+	4 - No dispositivo, no popup que surgir, permita o acesso.
+	5 - Volte para o cmd e digite: adb logcat.
+
+Pronto, na tela no cmd irá listar os logs de todos os aplicativos.

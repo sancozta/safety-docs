@@ -111,6 +111,16 @@ Os comandos AT foram muito utilizados no decorer deste projeto e graças ao seu 
 
 ### Circuito Utilizado no Projeto
 
+<p style="text-align: justify;">
+O circuito abaixo foi montado para prover a ação de captura de movimentações necessárias para o projeto, na imagem abaixo podemos verificar como cada componente do arduino se conecta com os demais, verificando as portas lógicas utilizadas como também a energização dos componentes.
+</p>
+
 <p align="center">
   <img src="../files/11.png">
+</p>
+
+### Código
+
+<p style="text-align: justify;">
+O código do projeto arduino pode ser encontrado em <a href="https://github.com/sancozta/safetyardu">sancozta/safetyardu</a>, neste repositório pode ser encontrado o código final utilizado pelo arduino, como também dois códigos criados para realizar os testes nos módulos de wifi e de detecção de movimento.
 </p>
